@@ -77,7 +77,9 @@
 //! assert_eq!(usize::MAX.zigzag_decode(), isize::MIN);
 //! ```
 
-use std::mem::size_of;
+#![no_std]
+
+use core::mem::size_of;
 
 const BITS_PER_BYTE: usize = 8;
 
